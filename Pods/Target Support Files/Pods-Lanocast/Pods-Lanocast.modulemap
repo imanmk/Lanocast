@@ -1,0 +1,6 @@
+framework module Pods_Lanocast {
+  umbrella header "Pods-Lanocast-umbrella.h"
+
+  export *
+  module * { export * }
+}

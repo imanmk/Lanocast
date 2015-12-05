@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DBA2CA731C1264FA008256A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CA721C1264FA008256A4 /* AppDelegate.swift */; };
-		DBA2CA751C1264FA008256A4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CA741C1264FA008256A4 /* FirstViewController.swift */; };
-		DBA2CA771C1264FA008256A4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CA761C1264FA008256A4 /* SecondViewController.swift */; };
 		DBA2CA7A1C1264FA008256A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA2CA781C1264FA008256A4 /* Main.storyboard */; };
 		DBA2CA7C1C1264FA008256A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */; };
 		DBA2CA7F1C1264FA008256A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA2CA7D1C1264FA008256A4 /* LaunchScreen.storyboard */; };
 		DBA2CA8A1C1264FA008256A4 /* LanocastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CA891C1264FA008256A4 /* LanocastTests.swift */; };
 		DBA2CA951C1264FA008256A4 /* LanocastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CA941C1264FA008256A4 /* LanocastUITests.swift */; };
+		DBA2CAE21C1268B7008256A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE11C1268B7008256A4 /* ViewController.swift */; };
+		DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE31C126935008256A4 /* SignupViewController.swift */; };
+		DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE51C126986008256A4 /* LoginViewController.swift */; };
+		DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */; };
+		DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */; };
+		DBA2CAEF1C126FB7008256A4 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */; };
+		DBA2CAF11C126FCB008256A4 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */; };
+		DD1541C1E4D8608F02F8FA0A /* Pods_Lanocast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lanocast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47A19277478359AE3792012 /* Pods-Lanocast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lanocast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast.debug.xcconfig"; sourceTree = "<group>"; };
 		DBA2CA6F1C1264FA008256A4 /* Lanocast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lanocast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA2CA721C1264FA008256A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBA2CA741C1264FA008256A4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DBA2CA761C1264FA008256A4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DBA2CA791C1264FA008256A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Lanocast/Assets.xcassets; sourceTree = "<group>"; };
 		DBA2CA7E1C1264FA008256A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA2CA801C1264FA008256A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA2CA851C1264FA008256A4 /* LanocastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanocastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +55,14 @@
 		DBA2CA901C1264FA008256A4 /* LanocastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanocastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA2CA941C1264FA008256A4 /* LanocastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanocastUITests.swift; sourceTree = "<group>"; };
 		DBA2CA961C1264FA008256A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA2CAE11C1268B7008256A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Lanocast/ViewController.swift; sourceTree = "<group>"; };
+		DBA2CAE31C126935008256A4 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = Lanocast/SignupViewController.swift; sourceTree = "<group>"; };
+		DBA2CAE51C126986008256A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Lanocast/LoginViewController.swift; sourceTree = "<group>"; };
+		DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Lanocast/ProfileViewController.swift; sourceTree = "<group>"; };
+		DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
+		DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
+		DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lanocast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1541C1E4D8608F02F8FA0A /* Pods_Lanocast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				DBA2CA881C1264FA008256A4 /* LanocastTests */,
 				DBA2CA931C1264FA008256A4 /* LanocastUITests */,
 				DBA2CA701C1264FA008256A4 /* Products */,
+				E2F8CDB8E44BC84EF0EE972D /* Pods */,
+				F5C22FEEA5363B24842CDB7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				DBA2CA721C1264FA008256A4 /* AppDelegate.swift */,
-				DBA2CA741C1264FA008256A4 /* FirstViewController.swift */,
-				DBA2CA761C1264FA008256A4 /* SecondViewController.swift */,
-				DBA2CA781C1264FA008256A4 /* Main.storyboard */,
-				DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */,
-				DBA2CA7D1C1264FA008256A4 /* LaunchScreen.storyboard */,
+				DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */,
+				DBA2CAEB1C126A3C008256A4 /* Model */,
+				DBA2CAEC1C126A5A008256A4 /* View */,
+				DBA2CAED1C126A62008256A4 /* Controller */,
 				DBA2CA801C1264FA008256A4 /* Info.plist */,
 			);
 			path = Lanocast;
@@ -128,6 +144,56 @@
 			path = LanocastUITests;
 			sourceTree = "<group>";
 		};
+		DBA2CAEB1C126A3C008256A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DBA2CAEC1C126A5A008256A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBA2CA781C1264FA008256A4 /* Main.storyboard */,
+				DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */,
+				DBA2CA7D1C1264FA008256A4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DBA2CAED1C126A62008256A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBA2CAE11C1268B7008256A4 /* ViewController.swift */,
+				DBA2CAE31C126935008256A4 /* SignupViewController.swift */,
+				DBA2CAE51C126986008256A4 /* LoginViewController.swift */,
+				DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */,
+				DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */,
+				DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E2F8CDB8E44BC84EF0EE972D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D47A19277478359AE3792012 /* Pods-Lanocast.debug.xcconfig */,
+				E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5C22FEEA5363B24842CDB7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBA2CA991C1264FA008256A4 /* Build configuration list for PBXNativeTarget "Lanocast" */;
 			buildPhases = (
+				1C254336DA09EBD5A68B0F4A /* Check Pods Manifest.lock */,
 				DBA2CA6B1C1264FA008256A4 /* Sources */,
 				DBA2CA6C1C1264FA008256A4 /* Frameworks */,
 				DBA2CA6D1C1264FA008256A4 /* Resources */,
+				B1FF7C9C4B987CF58F8CE887 /* Embed Pods Frameworks */,
+				AA54A1E7F7278AC64B5BAFF8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,14 +323,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C254336DA09EBD5A68B0F4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA54A1E7F7278AC64B5BAFF8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1FF7C9C4B987CF58F8CE887 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBA2CA6B1C1264FA008256A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA2CA771C1264FA008256A4 /* SecondViewController.swift in Sources */,
+				DBA2CAF11C126FCB008256A4 /* ActivityTableViewController.swift in Sources */,
+				DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */,
 				DBA2CA731C1264FA008256A4 /* AppDelegate.swift in Sources */,
-				DBA2CA751C1264FA008256A4 /* FirstViewController.swift in Sources */,
+				DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */,
+				DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */,
+				DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */,
+				DBA2CAE21C1268B7008256A4 /* ViewController.swift in Sources */,
+				DBA2CAEF1C126FB7008256A4 /* GalleryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +425,7 @@
 				DBA2CA791C1264FA008256A4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Lanocast;
 			sourceTree = "<group>";
 		};
 		DBA2CA7D1C1264FA008256A4 /* LaunchScreen.storyboard */ = {
@@ -311,6 +434,7 @@
 				DBA2CA7E1C1264FA008256A4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Lanocast;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +523,7 @@
 		};
 		DBA2CA9A1C1264FA008256A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47A19277478359AE3792012 /* Pods-Lanocast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lanocast/Info.plist;
@@ -410,6 +535,7 @@
 		};
 		DBA2CA9B1C1264FA008256A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lanocast/Info.plist;
@@ -486,6 +612,7 @@
 				DBA2CA9B1C1264FA008256A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA2CA9C1C1264FA008256A4 /* Build configuration list for PBXNativeTarget "LanocastTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +621,7 @@
 				DBA2CA9E1C1264FA008256A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA2CA9F1C1264FA008256A4 /* Build configuration list for PBXNativeTarget "LanocastUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +630,7 @@
 				DBA2CAA11C1264FA008256A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
