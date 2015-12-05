@@ -18,8 +18,8 @@
 		DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE51C126986008256A4 /* LoginViewController.swift */; };
 		DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */; };
 		DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */; };
-		DBA2CAEF1C126FB7008256A4 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */; };
-		DBA2CAF11C126FCB008256A4 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */; };
+		DBA2CAF41C133B5F008256A4 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF21C133B5F008256A4 /* ActivityTableViewController.swift */; };
+		DBA2CAF51C133B5F008256A4 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */; };
 		DD1541C1E4D8608F02F8FA0A /* Pods_Lanocast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +60,8 @@
 		DBA2CAE51C126986008256A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Lanocast/LoginViewController.swift; sourceTree = "<group>"; };
 		DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Lanocast/ProfileViewController.swift; sourceTree = "<group>"; };
 		DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
-		DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
-		DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		DBA2CAF21C133B5F008256A4 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityTableViewController.swift; path = Lanocast/ActivityTableViewController.swift; sourceTree = "<group>"; };
+		DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryTableViewController.swift; path = Lanocast/GalleryTableViewController.swift; sourceTree = "<group>"; };
 		E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lanocast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,12 +166,12 @@
 		DBA2CAED1C126A62008256A4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBA2CAF21C133B5F008256A4 /* ActivityTableViewController.swift */,
+				DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */,
 				DBA2CAE11C1268B7008256A4 /* ViewController.swift */,
 				DBA2CAE31C126935008256A4 /* SignupViewController.swift */,
 				DBA2CAE51C126986008256A4 /* LoginViewController.swift */,
 				DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */,
-				DBA2CAEE1C126FB7008256A4 /* GalleryTableViewController.swift */,
-				DBA2CAF01C126FCB008256A4 /* ActivityTableViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -376,14 +376,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA2CAF11C126FCB008256A4 /* ActivityTableViewController.swift in Sources */,
 				DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */,
+				DBA2CAF51C133B5F008256A4 /* GalleryTableViewController.swift in Sources */,
 				DBA2CA731C1264FA008256A4 /* AppDelegate.swift in Sources */,
 				DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */,
 				DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */,
+				DBA2CAF41C133B5F008256A4 /* ActivityTableViewController.swift in Sources */,
 				DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */,
 				DBA2CAE21C1268B7008256A4 /* ViewController.swift in Sources */,
-				DBA2CAEF1C126FB7008256A4 /* GalleryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
