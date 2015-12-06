@@ -17,9 +17,13 @@
 		DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE31C126935008256A4 /* SignupViewController.swift */; };
 		DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE51C126986008256A4 /* LoginViewController.swift */; };
 		DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */; };
-		DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */; };
+		DBA2CAEA1C126A1D008256A4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAE91C126A1D008256A4 /* NetworkManager.swift */; };
 		DBA2CAF41C133B5F008256A4 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF21C133B5F008256A4 /* ActivityTableViewController.swift */; };
 		DBA2CAF51C133B5F008256A4 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */; };
+		DBA2CAF71C139841008256A4 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF61C139841008256A4 /* GalleryTableViewCell.swift */; };
+		DBA2CAFE1C13BF79008256A4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFD1C13BF79008256A4 /* Photo.swift */; };
+		DBA2CB001C13BF99008256A4 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFF1C13BF99008256A4 /* Stamp.swift */; };
+		DBA2CB021C13BFAB008256A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB011C13BFAB008256A4 /* User.swift */; };
 		DD1541C1E4D8608F02F8FA0A /* Pods_Lanocast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +52,7 @@
 		DBA2CA791C1264FA008256A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA2CA7B1C1264FA008256A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Lanocast/Assets.xcassets; sourceTree = "<group>"; };
 		DBA2CA7E1C1264FA008256A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DBA2CA801C1264FA008256A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA2CA801C1264FA008256A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Lanocast/Info.plist; sourceTree = "<group>"; };
 		DBA2CA851C1264FA008256A4 /* LanocastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanocastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA2CA891C1264FA008256A4 /* LanocastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanocastTests.swift; sourceTree = "<group>"; };
 		DBA2CA8B1C1264FA008256A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +63,13 @@
 		DBA2CAE31C126935008256A4 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = Lanocast/SignupViewController.swift; sourceTree = "<group>"; };
 		DBA2CAE51C126986008256A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Lanocast/LoginViewController.swift; sourceTree = "<group>"; };
 		DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Lanocast/ProfileViewController.swift; sourceTree = "<group>"; };
-		DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
+		DBA2CAE91C126A1D008256A4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DBA2CAF21C133B5F008256A4 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityTableViewController.swift; path = Lanocast/ActivityTableViewController.swift; sourceTree = "<group>"; };
 		DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryTableViewController.swift; path = Lanocast/GalleryTableViewController.swift; sourceTree = "<group>"; };
+		DBA2CAF61C139841008256A4 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryTableViewCell.swift; path = Lanocast/GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		DBA2CAFD1C13BF79008256A4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = Lanocast/Photo.swift; sourceTree = "<group>"; };
+		DBA2CAFF1C13BF99008256A4 /* Stamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stamp.swift; path = Lanocast/Stamp.swift; sourceTree = "<group>"; };
+		DBA2CB011C13BFAB008256A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Lanocast/User.swift; sourceTree = "<group>"; };
 		E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lanocast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA2CA711C1264FA008256A4 /* Lanocast */,
+				DBA2CA801C1264FA008256A4 /* Info.plist */,
 				DBA2CA881C1264FA008256A4 /* LanocastTests */,
 				DBA2CA931C1264FA008256A4 /* LanocastUITests */,
 				DBA2CA701C1264FA008256A4 /* Products */,
@@ -117,11 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				DBA2CA721C1264FA008256A4 /* AppDelegate.swift */,
-				DBA2CAE91C126A1D008256A4 /* NetworkingController.swift */,
 				DBA2CAEB1C126A3C008256A4 /* Model */,
 				DBA2CAEC1C126A5A008256A4 /* View */,
 				DBA2CAED1C126A62008256A4 /* Controller */,
-				DBA2CA801C1264FA008256A4 /* Info.plist */,
+				DBA2CAFC1C13B9DD008256A4 /* Network */,
 			);
 			path = Lanocast;
 			sourceTree = "<group>";
@@ -147,6 +155,9 @@
 		DBA2CAEB1C126A3C008256A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DBA2CAFD1C13BF79008256A4 /* Photo.swift */,
+				DBA2CAFF1C13BF99008256A4 /* Stamp.swift */,
+				DBA2CB011C13BFAB008256A4 /* User.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -172,9 +183,18 @@
 				DBA2CAE31C126935008256A4 /* SignupViewController.swift */,
 				DBA2CAE51C126986008256A4 /* LoginViewController.swift */,
 				DBA2CAE71C1269B5008256A4 /* ProfileViewController.swift */,
+				DBA2CAF61C139841008256A4 /* GalleryTableViewCell.swift */,
 			);
 			name = Controller;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		DBA2CAFC1C13B9DD008256A4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DBA2CAE91C126A1D008256A4 /* NetworkManager.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		E2F8CDB8E44BC84EF0EE972D /* Pods */ = {
@@ -378,11 +398,15 @@
 			files = (
 				DBA2CAE61C126986008256A4 /* LoginViewController.swift in Sources */,
 				DBA2CAF51C133B5F008256A4 /* GalleryTableViewController.swift in Sources */,
+				DBA2CAF71C139841008256A4 /* GalleryTableViewCell.swift in Sources */,
 				DBA2CA731C1264FA008256A4 /* AppDelegate.swift in Sources */,
+				DBA2CAFE1C13BF79008256A4 /* Photo.swift in Sources */,
+				DBA2CB001C13BF99008256A4 /* Stamp.swift in Sources */,
 				DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */,
 				DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */,
+				DBA2CB021C13BFAB008256A4 /* User.swift in Sources */,
 				DBA2CAF41C133B5F008256A4 /* ActivityTableViewController.swift in Sources */,
-				DBA2CAEA1C126A1D008256A4 /* NetworkingController.swift in Sources */,
+				DBA2CAEA1C126A1D008256A4 /* NetworkManager.swift in Sources */,
 				DBA2CAE21C1268B7008256A4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
