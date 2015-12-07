@@ -9,7 +9,7 @@
         <scene sceneID="5cx-3r-hUc">
             <objects>
                 <tableViewController storyboardIdentifier="galleryTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6J-Xh-M0W" userLabel="Gallery" customClass="GalleryTableViewController" customModule="Lanocast" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="480" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGy-sc-eT5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="480" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGy-sc-eT5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xan-kk-748" id="mqE-bd-Q5S">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="479.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stamps received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RS-Oj-XWB">

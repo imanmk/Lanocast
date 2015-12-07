@@ -24,6 +24,8 @@
 		DBA2CAFE1C13BF79008256A4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFD1C13BF79008256A4 /* Photo.swift */; };
 		DBA2CB001C13BF99008256A4 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFF1C13BF99008256A4 /* Stamp.swift */; };
 		DBA2CB021C13BFAB008256A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB011C13BFAB008256A4 /* User.swift */; };
+		DBA2CB041C14385D008256A4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB031C14385D008256A4 /* DataManager.swift */; };
+		DBA2CB061C1550EA008256A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB051C1550EA008256A4 /* Constants.swift */; };
 		DD1541C1E4D8608F02F8FA0A /* Pods_Lanocast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D8113752A43D3570E5D7F3 /* Pods_Lanocast.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		DBA2CAFD1C13BF79008256A4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = Lanocast/Photo.swift; sourceTree = "<group>"; };
 		DBA2CAFF1C13BF99008256A4 /* Stamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stamp.swift; path = Lanocast/Stamp.swift; sourceTree = "<group>"; };
 		DBA2CB011C13BFAB008256A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Lanocast/User.swift; sourceTree = "<group>"; };
+		DBA2CB031C14385D008256A4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Lanocast/DataManager.swift; sourceTree = "<group>"; };
+		DBA2CB051C1550EA008256A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Lanocast/Constants.swift; sourceTree = "<group>"; };
 		E38665C563C6D09F7D1F3248 /* Pods-Lanocast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lanocast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lanocast/Pods-Lanocast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +162,8 @@
 				DBA2CAFD1C13BF79008256A4 /* Photo.swift */,
 				DBA2CAFF1C13BF99008256A4 /* Stamp.swift */,
 				DBA2CB011C13BFAB008256A4 /* User.swift */,
+				DBA2CB031C14385D008256A4 /* DataManager.swift */,
+				DBA2CB051C1550EA008256A4 /* Constants.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -407,7 +413,9 @@
 				DBA2CB021C13BFAB008256A4 /* User.swift in Sources */,
 				DBA2CAF41C133B5F008256A4 /* ActivityTableViewController.swift in Sources */,
 				DBA2CAEA1C126A1D008256A4 /* NetworkManager.swift in Sources */,
+				DBA2CB061C1550EA008256A4 /* Constants.swift in Sources */,
 				DBA2CAE21C1268B7008256A4 /* ViewController.swift in Sources */,
+				DBA2CB041C14385D008256A4 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GalleryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+       
+        NetworkManager.getJSONArrayFromURL(Constants.GALLERY_USERS_JSON_URL!, completionHandler: {
+            JSONObjArrayDictionary in
+            print(JSONObjArrayDictionary.count)
+        })
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -42,11 +48,23 @@ class GalleryTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("galleryCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("galleryCell", forIndexPath: indexPath) as! GalleryTableViewCell
 
         // Configure the cell...
         
-
+        // #warning just changes the selection style. tableView:didSelectRowAtIndexPath: still gets called
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.galleryImage.kf_showIndicatorWhenLoading = true
+        
+        
+        let galleryImagesURL = NSURL(string: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAATgAAAAJDYyMWVhZDBlLTg5YzMtNDI0MS04YzQzLTQ2ZGM1NjI4YjMyMQ.jpg")!
+        //let imageData = NSData(contentsOfURL: galleryImagesURL)
+//        let image = UIImage(data: imageData!)
+//        cell.galleryImage.image = image
+        cell.galleryImage.kf_setImageWithURL(galleryImagesURL, placeholderImage: nil, optionsInfo: [.Transition(ImageTransition.Fade(1))], progressBlock: {receivedSize, totalSize in print("\(indexPath.row):\(receivedSize)/\(totalSize)")}, completionHandler: { image, error, cacheType, galleryImagesURL in
+        print("\(indexPath.row): Finished")})
+        
+        
         return cell
     }
 
