@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+import Spring
 
 class ActivityTableViewController: UITableViewController {
 

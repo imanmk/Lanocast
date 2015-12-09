@@ -86,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJH-E9-FiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="-534.86666666666667"/>
+            <point key="canvasLocation" x="832" y="-602"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="aTJ-Fg-17t">
@@ -103,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kwe-1b-9y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="-533.99999999999989"/>
+            <point key="canvasLocation" x="416" y="-602"/>
         </scene>
         <!--Activity-->
         <scene sceneID="3ld-ZX-wLz">
@@ -132,7 +132,63 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xz0-TQ-9xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="120.99999999999999"/>
+            <point key="canvasLocation" x="832" y="181"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Ob9-d5-aly">
+            <objects>
+                <viewController storyboardIdentifier="signupVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j7P-14-2ZQ" customClass="SignupViewController" customModule="Lanocast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="raI-OV-kne"/>
+                        <viewControllerLayoutGuide type="bottom" id="nsj-1r-Eqz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZUj-CZ-0FW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIF-dH-JkF">
+                                <rect key="frame" x="137" y="418" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="PCy-1i-SNd" kind="push" identifier="signupAddPicSegue" id="d6b-UE-4Eo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="g7G-Gj-DU5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTX-r9-QYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="-602"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="gGF-q8-Ne6">
+            <objects>
+                <viewController storyboardIdentifier="signupPicVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PCy-1i-SNd" customClass="SignupViewController" customModule="Lanocast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9os-Ij-VrF"/>
+                        <viewControllerLayoutGuide type="bottom" id="shB-qP-6Lj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbu-fG-3R1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-5R-dCU">
+                                <rect key="frame" x="137" y="411" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="push" identifier="signupToGallerySegue" id="LbC-qZ-fAV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="kfJ-ni-PXu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1h-Sz-7KC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="-602"/>
         </scene>
         <!--Profile-->
         <scene sceneID="5LM-zK-IaV">
@@ -147,11 +203,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="dFL-KE-0p7"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="dFL-KE-0p7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIo-QF-rgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="902.99999999999989"/>
+            <point key="canvasLocation" x="1308" y="-222"/>
         </scene>
         <!--Activity-->
         <scene sceneID="lER-Ez-iex">
@@ -168,12 +224,93 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtQ-ec-Bm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="120.99999999999999"/>
+            <point key="canvasLocation" x="416" y="181"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6E6-Oc-Hhz">
+            <objects>
+                <viewController storyboardIdentifier="loginSignupID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PM5-PL-Thd" customClass="ViewController" customModule="Lanocast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nAR-39-7JR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Csf-cd-WpT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ln7-A1-hcA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04S-Rc-arN">
+                                <rect key="frame" x="217" y="347" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Vx0-Ac-VSp" kind="push" identifier="signupProcessSegue" id="I36-gL-r0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXT-Iw-ery">
+                                <rect key="frame" x="47" y="347" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Ss6-nd-tWW" kind="push" identifier="loginSegue" id="iiP-T3-Nnh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W9H-pX-pjk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4S-kU-3E8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1875" y="-222"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="nKV-IJ-9x4">
+            <objects>
+                <viewController storyboardIdentifier="loginVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ss6-nd-tWW" customClass="LoginViewController" customModule="Lanocast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nuu-dC-1To"/>
+                        <viewControllerLayoutGuide type="bottom" id="ap1-w7-x8x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oIg-QC-SOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-xM-mO9">
+                                <rect key="frame" x="137" y="427" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="push" identifier="loginToGallerySegue" id="V5L-U6-r9X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lQw-j6-nAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Nr-z6-nDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1403" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lfa-0F-WcV">
+            <objects>
+                <navigationController storyboardIdentifier="signupNavigationControllerID" id="Vx0-Ac-VSp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bKU-RN-CI2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="osL-65-b19">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="j7P-14-2ZQ" kind="relationship" relationship="rootViewController" id="Y9d-ph-c2i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbE-n7-1ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1403" y="-602"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cwK-Nn-OlO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -184,11 +321,15 @@
                         <segue destination="eC5-x5-8py" kind="relationship" relationship="viewControllers" id="BS6-sX-r3f"/>
                         <segue destination="ztj-58-dKu" kind="relationship" relationship="viewControllers" id="Vjv-E7-Qjc"/>
                         <segue destination="dC2-WD-4Ba" kind="relationship" relationship="viewControllers" id="Vge-1E-vnL"/>
+                        <segue destination="PM5-PL-Thd" kind="push" identifier="loginSignupSegue" id="Hlu-a0-tIe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-20" y="-222"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="V5L-U6-r9X"/>
+    </inferredMetricsTieBreakers>
 </document>

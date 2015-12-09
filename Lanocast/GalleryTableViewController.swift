@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Spring
 
 class GalleryTableViewController: UITableViewController {
     
