@@ -10,14 +10,28 @@ import UIKit
 import Kingfisher
 
 class GalleryTableViewController: UITableViewController {
+    
+    var JSONArray = [[String : AnyObject]]()
+    
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
-       
+        
+        
         NetworkManager.getJSONArrayFromURL(Constants.GALLERY_USERS_JSON_URL!, completionHandler: {
-            JSONObjArrayDictionary in
-            print(JSONObjArrayDictionary.count)
+            JSONObjArrayDictionary -> Void in
+            
+            self.JSONArray = JSONObjArrayDictionary
+            
+            print(self.JSONArray.count)
+            for (var i = 0; i < self.JSONArray.count; i++) {
+                if let item = self.JSONArray[i]["image"] {
+                    print(item)
+                }
+                
+            }
+            self.tableView.reloadData()
         })
         
         // Uncomment the following line to preserve selection between presentations
@@ -43,27 +57,40 @@ class GalleryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //return the number of rows in the section
-        return 10
+        print("inside tableView: \(JSONArray.count)")
+        
+        
+       
+        return JSONArray.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("galleryCell", forIndexPath: indexPath) as! GalleryTableViewCell
-
+        
         // Configure the cell...
         
         // #warning just changes the selection style. tableView:didSelectRowAtIndexPath: still gets called
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.galleryImage.kf_showIndicatorWhenLoading = true
         
+        //update nameLabel: user's name
         
-        let galleryImagesURL = NSURL(string: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAATgAAAAJDYyMWVhZDBlLTg5YzMtNDI0MS04YzQzLTQ2ZGM1NjI4YjMyMQ.jpg")!
-        //let imageData = NSData(contentsOfURL: galleryImagesURL)
-//        let image = UIImage(data: imageData!)
-//        cell.galleryImage.image = image
-        cell.galleryImage.kf_setImageWithURL(galleryImagesURL, placeholderImage: nil, optionsInfo: [.Transition(ImageTransition.Fade(1))], progressBlock: {receivedSize, totalSize in print("\(indexPath.row):\(receivedSize)/\(totalSize)")}, completionHandler: { image, error, cacheType, galleryImagesURL in
-        print("\(indexPath.row): Finished")})
         
+        if let name = JSONArray[indexPath.row][Constants.NAME_KEY] as? String {
+            cell.nameLabel.text = name
+        } else {
+            cell.nameLabel.text = "Lano Name"
+        }
+        
+        //put users' images in the cells
+        let imageURL : NSURL
+        if let imageName = JSONArray[indexPath.row][Constants.IMAGE_KEY] as? String {
+            imageURL = Constants.USER_IMAGE_URL!.URLByAppendingPathComponent(imageName)
+            
+            cell.galleryImage.kf_setImageWithURL(imageURL, placeholderImage: nil, optionsInfo: [.Transition(ImageTransition.Fade(1))], progressBlock: {receivedSize, totalSize in print("\(indexPath.row):\(receivedSize)/\(totalSize)")}, completionHandler: { image, error, cacheType, imageURL in
+                print("\(indexPath.row): Finished")})
+        }
         
         return cell
     }

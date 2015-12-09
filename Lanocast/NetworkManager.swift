@@ -28,7 +28,7 @@ class NetworkManager {
             if let resultData = swiftyJsonVar.arrayObject {
                 JSONObjArrayDictionary = resultData as! [[String:AnyObject]]
             }
-            print(JSONObjArrayDictionary.count)
+            //print(JSONObjArrayDictionary.count)
             completionHandler(JSONObjArrayDictionary ?? [[:]])
         }
         

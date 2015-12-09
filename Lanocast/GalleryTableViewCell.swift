@@ -17,6 +17,8 @@ class GalleryTableViewCell: UITableViewCell {
     
     @IBOutlet var galleryImage: UIImageView!
     
+    @IBOutlet var nameLabel: UILabel!
+    
     
 
 //    override func awakeFromNib() {
