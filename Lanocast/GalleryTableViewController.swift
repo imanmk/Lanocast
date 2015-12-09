@@ -41,6 +41,13 @@ class GalleryTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        //Set the gallery tab to be the default tab 
+        self.tabBarController?.selectedIndex = 0
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

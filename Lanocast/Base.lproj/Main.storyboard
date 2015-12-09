@@ -153,10 +153,51 @@
                                     <segue destination="PCy-1i-SNd" kind="push" identifier="signupAddPicSegue" id="d6b-UE-4Eo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khJ-d0-C3f">
+                                <rect key="frame" x="0.0" y="102" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aH2-yn-b0X">
+                                <rect key="frame" x="0.0" y="141" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTP-Qa-3m5">
+                                <rect key="frame" x="0.0" y="180" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Re-enter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnE-lj-IRw">
+                                <rect key="frame" x="0.0" y="219" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Birthdate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-nN-K2J">
+                                <rect key="frame" x="0.0" y="258" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="birthdatePickerTextField:" destination="j7P-14-2ZQ" eventType="editingDidBegin" id="Y8J-LL-b2s"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Sex" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-6L-cv1">
+                                <rect key="frame" x="0.0" y="297" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="g7G-Gj-DU5"/>
+                    <connections>
+                        <outlet property="birthdateTextField" destination="Dik-nN-K2J" id="Y1o-lf-1MF"/>
+                        <outlet property="confirmPasswordTextField" destination="tnE-lj-IRw" id="l7q-RG-anD"/>
+                        <outlet property="emailTextField" destination="aH2-yn-b0X" id="21T-q7-myh"/>
+                        <outlet property="nameTextField" destination="khJ-d0-C3f" id="rr9-kG-yG8"/>
+                        <outlet property="passwordTextField" destination="qTP-Qa-3m5" id="qs1-rh-Gz2"/>
+                        <outlet property="sexPickerTextField" destination="cPs-6L-cv1" id="Tlu-yg-Ffw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTX-r9-QYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,15 +280,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04S-Rc-arN">
-                                <rect key="frame" x="217" y="347" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="214" y="347" width="52" height="30"/>
+                                <state key="normal" title="Sign up"/>
                                 <connections>
                                     <segue destination="Vx0-Ac-VSp" kind="push" identifier="signupProcessSegue" id="I36-gL-r0e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXT-Iw-ery">
                                 <rect key="frame" x="47" y="347" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Log in"/>
                                 <connections>
                                     <segue destination="Ss6-nd-tWW" kind="push" identifier="loginSegue" id="iiP-T3-Nnh"/>
                                 </connections>

@@ -28,7 +28,24 @@ class User
     var caption : String = ""
     var photo_id : Int = 0
     var gallery : Int = 0
-    var birthdate : String = ""
+    class var birthdate : String {
+        get {
+            return self.birthdate
+        }
+        set(newBirthdate) {
+            self.birthdate = newBirthdate
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func Populate(dictionary:NSDictionary) {
         
@@ -53,13 +70,10 @@ class User
         let dateFormatter = NSDateFormatter()
         let enUSPosixLocale = NSLocale(localeIdentifier: "en_US_POSIX")
         dateFormatter.locale = enUSPosixLocale
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        dateFormatter.dateFormat = "YYYY-MM-DD"
         return dateFormatter.dateFromString(dateString)!
     }
-//    class func Populate(data:NSData) -> User
-//    {
-////        return Populate(NSJSONSerialization.JSONObjectWithData(data, options: nil))
-//    }
+
     
     class func Populate(dictionary:NSDictionary) -> User
     {
