@@ -10,11 +10,12 @@ import Foundation
 
 class Stamps {
     
-    static var stampsReceivedArray = [[String : AnyObject]]()
-    static var stampsToGiveArray = [[String : AnyObject]]()
+    static var stampsReceivedDictionary = [String : AnyObject]()
+    static var stampsToGiveDictionary = [String : AnyObject]()
     
     //TODO: change this to an array with getter and setter
-    
+    //TODO: REMOVE this total number of stamps const
+    static let TOTAL_STAMP_KINDS = 8
     
     static let makeupStampKey = "1"
     static let hairStampKey = "2"
@@ -44,6 +45,31 @@ class Stamps {
     static var fallStampCount = 0
     
     
+    class func getStampNameByID (stampID : Int) -> String {
+        switch stampID {
+            case 1:
+                return "Make up"
+            case 2:
+                return "Hair"
+            case 3:
+                return "Summer"
+            case 4:
+                return "Nails"
+            case 5:
+                return "Black dress"
+            case 6:
+                return "Halloween"
+            case 7:
+                return "Fitness"
+            case 8:
+                return "Fall"
+            default:
+                print("No stamp could be matched with a stampID")
+                return "A stamp"
+            
+            
+        }
+    }
     
    
     

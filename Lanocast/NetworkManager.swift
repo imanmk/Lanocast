@@ -33,22 +33,41 @@ class NetworkManager {
         }
     }
     
-    //Get total kind and number of stamps received for a user ID
     
-    class func getStampsReceived (userID: String, completionHandler: ([[String:AnyObject]] -> Void)) {
+    class func getTransactionsForID (userID: String, completionHandler: ([[String:AnyObject]] -> Void)) {
         
-        var stampsReceivedArray = [[String : AnyObject]]()
-        let URLwithID = Constants.TOTAL_STAMPS_RECEIVED_URL!.URLByAppendingPathComponent(userID)
+        var transactionsArray = [[String : AnyObject]]()
+        let URLwithID = Constants.USER_TRANSACTIONS_URL!.URLByAppendingPathComponent(userID)
         
         Alamofire.request(.GET, URLwithID).responseJSON { (responseData) -> Void in
             
             let swiftyJsonVar = JSON(responseData.result.value!)
             
             if let resultData = swiftyJsonVar.arrayObject {
-                stampsReceivedArray = resultData as! [[String:AnyObject]]
+                transactionsArray = resultData as! [[String:AnyObject]]
             }
+            //print(JSONObjArrayDictionary.count)
+            completionHandler(transactionsArray ?? [[:]])
+        }
+    }
+    
+    
+    //Get total kind and number of stamps received for a user ID
+    
+    class func getStampsReceived (userID: String, completionHandler: ([String : AnyObject] -> Void)) {
+        
+        var stampsReceivedArray = [String : AnyObject]()
+        let URLwithID = Constants.TOTAL_STAMPS_RECEIVED_URL!.URLByAppendingPathComponent(userID)
+        print(URLwithID)
+        Alamofire.request(.GET, URLwithID).responseJSON { (responseData) -> Void in
             
-            completionHandler(stampsReceivedArray ?? [[:]])
+            let swiftyJsonVar = JSON(responseData.result.value!)
+            print("resultData: \(swiftyJsonVar)")
+            //if let resultData = swiftyJsonVar {
+                stampsReceivedArray = swiftyJsonVar.dictionaryObject!
+            //}
+            print("stampsReceivedArray\(stampsReceivedArray)")
+            completionHandler(stampsReceivedArray ?? [:])
         }
     }
     

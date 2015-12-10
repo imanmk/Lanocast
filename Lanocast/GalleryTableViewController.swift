@@ -98,17 +98,44 @@ class GalleryTableViewController: UITableViewController {
                 print("\(indexPath.row): Finished")})
         }
         
+//        print("id:")
+//        print(DataManager.galleryJSONArray[indexPath.row][Constants.ID_KEY]!)
+//        var idAtRowIndex = DataManager.galleryJSONArray[indexPath.row][Constants.ID_KEY]
+//            
+//            print(idAtRowIndex)
+//            NetworkManager.getStampsReceived("\(idAtRowIndex)", completionHandler: {
+//                stampsReceivedArray -> Void in
+//                
+//                Stamps.stampsReceivedDictionary = stampsReceivedArray
+//                print("stampsReceivedDictionary size:\(Stamps.stampsReceivedDictionary.count)")
+//                self.tableView.reloadData()
+//            
+//            })
+//            
+//            var labelsArray = [cell.stampCountLabel_0, cell.stampCountLabel_1, cell.stampCountLabel_2, cell.stampCountLabel_3, cell.stampCountLabel_4, cell.stampCountLabel_5, cell.stampCountLabel_6]
+//            
+//            for (var stampIndex = 1; stampIndex <= Stamps.TOTAL_STAMP_KINDS; stampIndex++) {
+//                
+//                var stampCount = Stamps.stampsReceivedDictionary["\(stampIndex)"]! as? Int
+//                if (stampCount != 0) {
+//                    print("stamp \(stampIndex) count is: \(stampCount)")
+//                    
+//                    for (var labelIndex = 0; labelIndex <= GalleryTableViewCell.STAMP_COUNT_LABEL_TOTAL;
+//                        labelIndex++) {
+//                            
+//                            var text = labelsArray[labelIndex].text
+//                            if (text != nil && !text!.isEmpty) {
+//                            
+//                                text = (Stamps.stampsReceivedDictionary["\(stampIndex)"]
+//                                    as! String)
+//                                print("stamp count for index\(labelIndex) is: \(text)")
+//                            }
+//                    }
+//                }
+//            }
+//            
+//        
         
-        if let idAtRowIndex = DataManager.galleryJSONArray[indexPath.row][Constants.ID_KEY] as? String {
-            
-            NetworkManager.getStampsReceived(idAtRowIndex, completionHandler: {
-                (stampsReceivedArray) -> Void in
-                
-                Stamps.stampsReceivedArray = stampsReceivedArray
-            
-            })
-        
-        }
         
         return cell
     }

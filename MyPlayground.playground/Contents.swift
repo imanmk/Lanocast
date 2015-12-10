@@ -16,3 +16,15 @@ let imageURL = NSURL(string: imageString)
 let directoryURL = NSURL(string: "www.me.com/")
 
 let docURL = directoryURL!.URLByAppendingPathComponent("imanmk")
+
+
+let wordDict = [
+    "A" : 2,
+    "Z" : 3,
+    "D" : 1
+]
+
+let sortedDict = wordDict.values.sort { $0 < $1 }
+print("\(sortedDict)")
+
+print(wordDict["A"]!)
