@@ -15,7 +15,7 @@ import Kingfisher
 class NetworkManager {
 
         
-    
+    //Get JSON Array for all the users in the gallery
     
     class func getJSONArrayFromURL (URL: NSURL, completionHandler: ([[String:AnyObject]] -> Void)) {
         
@@ -32,6 +32,46 @@ class NetworkManager {
             completionHandler(JSONObjArrayDictionary ?? [[:]])
         }
     }
+    
+    //Get total kind and number of stamps received for a user ID
+    
+    class func getStampsReceived (userID: String, completionHandler: ([[String:AnyObject]] -> Void)) {
+        
+        var stampsReceivedArray = [[String : AnyObject]]()
+        let URLwithID = Constants.TOTAL_STAMPS_RECEIVED_URL!.URLByAppendingPathComponent(userID)
+        
+        Alamofire.request(.GET, URLwithID).responseJSON { (responseData) -> Void in
+            
+            let swiftyJsonVar = JSON(responseData.result.value!)
+            
+            if let resultData = swiftyJsonVar.arrayObject {
+                stampsReceivedArray = resultData as! [[String:AnyObject]]
+            }
+            
+            completionHandler(stampsReceivedArray ?? [[:]])
+        }
+    }
+    
+    //Get total number of stamps left to give away for a user ID
+    
+    class func getStampsToGive (userID: String, completionHandler: ([[String:AnyObject]] -> Void)) {
+        
+        var stampsToGiveArray = [[String : AnyObject]]()
+        let URLwithID = Constants.TOTAL_STAMPS_TO_GIVE_URL!.URLByAppendingPathComponent(userID)
+        
+        Alamofire.request(.GET, URLwithID).responseJSON { (responseData) -> Void in
+            
+            let swiftyJsonVar = JSON(responseData.result.value!)
+            
+            if let resultData = swiftyJsonVar.arrayObject {
+                stampsToGiveArray = resultData as! [[String:AnyObject]]
+            }
+            
+            completionHandler(stampsToGiveArray ?? [[:]])
+        }
+    }
+    
+    //POST a JSON array to a URL 
     
     class func postJSONArrayToURL (URL: NSURL, Parameters: [String : AnyObject]) {
         

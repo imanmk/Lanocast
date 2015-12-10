@@ -15,7 +15,8 @@ import Kingfisher
 class DataManager {
     
     //JSON Array of user unfo
-    static var JSONArray = [[String : AnyObject]]()
+    static var galleryJSONArray = [[String : AnyObject]]()
+    
     
     
 }

@@ -12,3 +12,7 @@ var text = arrayDic[0]["image"]!
 let imageString = "http://www.lanocast.com/uploads/\(text)"
 
 let imageURL = NSURL(string: imageString)
+
+let directoryURL = NSURL(string: "www.me.com/")
+
+let docURL = directoryURL!.URLByAppendingPathComponent("imanmk")

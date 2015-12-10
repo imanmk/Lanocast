@@ -14,16 +14,6 @@ import Kingfisher
 
 class Post {
     
-    var JSONArray = [[String : AnyObject]]()
-    
-    
-    init() {
-        NetworkManager.getJSONArrayFromURL(Constants.GALLERY_USERS_JSON_URL!, completionHandler: {
-            JSONObjArrayDictionary -> Void in
-            
-            self.JSONArray = JSONObjArrayDictionary
-            
-        })
-    }
+  
     
 }
