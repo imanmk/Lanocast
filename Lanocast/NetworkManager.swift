@@ -17,7 +17,7 @@ class NetworkManager {
         
     
     
-    class func getJSONArrayFromURL(URL: NSURL, completionHandler: ([[String:AnyObject]] -> Void)) {
+    class func getJSONArrayFromURL (URL: NSURL, completionHandler: ([[String:AnyObject]] -> Void)) {
         
         var JSONObjArrayDictionary = [[String : AnyObject]]()
         
@@ -31,9 +31,26 @@ class NetworkManager {
             //print(JSONObjArrayDictionary.count)
             completionHandler(JSONObjArrayDictionary ?? [[:]])
         }
-        
-     
-    
     }
+    
+    class func postJSONArrayToURL (URL: NSURL, Parameters: [String : AnyObject]) {
+        
+        
+        Alamofire.request(.POST, URL, parameters: Parameters, encoding: .JSON)
+            .validate()
+            .responseJSON { response in
+                
+                switch response.result {
+                    case .Success:
+                        print("Validation Successful")
+                        break
+                case .Failure(let error):
+                    print(error)
+                    break
+                
+                }
+        }
+    }
+    
     
 }

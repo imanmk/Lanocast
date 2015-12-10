@@ -12,7 +12,7 @@ import Spring
 
 class GalleryTableViewController: UITableViewController {
     
-    var JSONArray = [[String : AnyObject]]()
+//    var JSONArray = [[String : AnyObject]]()
     
 
     override func viewDidLoad() {
@@ -23,11 +23,11 @@ class GalleryTableViewController: UITableViewController {
         NetworkManager.getJSONArrayFromURL(Constants.GALLERY_USERS_JSON_URL!, completionHandler: {
             JSONObjArrayDictionary -> Void in
             
-            self.JSONArray = JSONObjArrayDictionary
+            DataManager.JSONArray = JSONObjArrayDictionary
             
-            print(self.JSONArray.count)
-            for (var i = 0; i < self.JSONArray.count; i++) {
-                if let item = self.JSONArray[i]["image"] {
+            print(DataManager.JSONArray.count)
+            for (var i = 0; i < DataManager.JSONArray.count; i++) {
+                if let item = DataManager.JSONArray[i]["image"] {
                     print(item)
                 }
                 
@@ -65,11 +65,11 @@ class GalleryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //return the number of rows in the section
-        print("inside tableView: \(JSONArray.count)")
+        print("inside tableView: \(DataManager.JSONArray.count)")
         
         
        
-        return JSONArray.count
+        return DataManager.JSONArray.count
     }
 
     
@@ -85,7 +85,7 @@ class GalleryTableViewController: UITableViewController {
         //update nameLabel: user's name
         
         
-        if let name = JSONArray[indexPath.row][Constants.NAME_KEY] as? String {
+        if let name = DataManager.JSONArray[indexPath.row][Constants.NAME_KEY] as? String {
             cell.nameLabel.text = name
         } else {
             cell.nameLabel.text = "Lano Name"
@@ -93,7 +93,7 @@ class GalleryTableViewController: UITableViewController {
         
         //put users' images in the cells
         let imageURL : NSURL
-        if let imageName = JSONArray[indexPath.row][Constants.IMAGE_KEY] as? String {
+        if let imageName = DataManager.JSONArray[indexPath.row][Constants.IMAGE_KEY] as? String {
             imageURL = Constants.USER_IMAGE_URL!.URLByAppendingPathComponent(imageName)
             
             cell.galleryImage.kf_setImageWithURL(imageURL, placeholderImage: nil, optionsInfo: [.Transition(ImageTransition.Fade(1))], progressBlock: {receivedSize, totalSize in print("\(indexPath.row):\(receivedSize)/\(totalSize)")}, completionHandler: { image, error, cacheType, imageURL in

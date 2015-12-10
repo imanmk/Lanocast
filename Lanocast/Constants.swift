@@ -36,6 +36,11 @@ class Constants {
     static let USER_IMAGE_NAME_URL = NSURL(string: "http://www.lanocast.com/userimagename/")
     static let GALLERY_IMAGES_URL = NSURL(string: "http://www.lanocast.com/galleryimages/")
     static let GALLERY_USERS_JSON_URL = NSURL(string: "http://www.lanocast.com/galleryimagejson/")
+    static let TOTAL_STAMPS_RECEIVED_URL = NSURL(string: "http://lanocast.com/totalbadgesreceivedcount/")
+    static let TOTAL_STAMPS_TO_GIVE_URL = NSURL(string: "http://lanocast.com/totalbadgestogivecount/")
+    static let USER_TRANSACTIONS_URL = NSURL(string: "http://lanocast.com/usertransactions/")
+    static let STAMP_EXCHANGE_URL = NSURL(string: "http://lanocast.com/exchange/")
+    static let LOGIN_AUTHENTICATION_URL = NSURL(string: "http://lanocast.com/letmein")
     
     // User sex options
     static let sexOptions = ["Female", "Male", "Other"]

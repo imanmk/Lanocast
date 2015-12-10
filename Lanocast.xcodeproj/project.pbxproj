@@ -23,7 +23,7 @@
 		DBA2CAF51C133B5F008256A4 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */; };
 		DBA2CAF71C139841008256A4 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAF61C139841008256A4 /* GalleryTableViewCell.swift */; };
 		DBA2CAFE1C13BF79008256A4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFD1C13BF79008256A4 /* Photo.swift */; };
-		DBA2CB001C13BF99008256A4 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFF1C13BF99008256A4 /* Stamp.swift */; };
+		DBA2CB001C13BF99008256A4 /* Stamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CAFF1C13BF99008256A4 /* Stamps.swift */; };
 		DBA2CB021C13BFAB008256A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB011C13BFAB008256A4 /* User.swift */; };
 		DBA2CB041C14385D008256A4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB031C14385D008256A4 /* DataManager.swift */; };
 		DBA2CB061C1550EA008256A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA2CB051C1550EA008256A4 /* Constants.swift */; };
@@ -72,7 +72,7 @@
 		DBA2CAF31C133B5F008256A4 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryTableViewController.swift; path = Lanocast/GalleryTableViewController.swift; sourceTree = "<group>"; };
 		DBA2CAF61C139841008256A4 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryTableViewCell.swift; path = Lanocast/GalleryTableViewCell.swift; sourceTree = "<group>"; };
 		DBA2CAFD1C13BF79008256A4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = Lanocast/Photo.swift; sourceTree = "<group>"; };
-		DBA2CAFF1C13BF99008256A4 /* Stamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stamp.swift; path = Lanocast/Stamp.swift; sourceTree = "<group>"; };
+		DBA2CAFF1C13BF99008256A4 /* Stamps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stamps.swift; path = Lanocast/Stamps.swift; sourceTree = "<group>"; };
 		DBA2CB011C13BFAB008256A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Lanocast/User.swift; sourceTree = "<group>"; };
 		DBA2CB031C14385D008256A4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Lanocast/DataManager.swift; sourceTree = "<group>"; };
 		DBA2CB051C1550EA008256A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Lanocast/Constants.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA2CAFD1C13BF79008256A4 /* Photo.swift */,
-				DBA2CAFF1C13BF99008256A4 /* Stamp.swift */,
+				DBA2CAFF1C13BF99008256A4 /* Stamps.swift */,
 				DBA2CB011C13BFAB008256A4 /* User.swift */,
 				DBA2CB031C14385D008256A4 /* DataManager.swift */,
 				DBA2CB051C1550EA008256A4 /* Constants.swift */,
@@ -410,7 +410,7 @@
 				DBA2CAF71C139841008256A4 /* GalleryTableViewCell.swift in Sources */,
 				DBA2CA731C1264FA008256A4 /* AppDelegate.swift in Sources */,
 				DBA2CAFE1C13BF79008256A4 /* Photo.swift in Sources */,
-				DBA2CB001C13BF99008256A4 /* Stamp.swift in Sources */,
+				DBA2CB001C13BF99008256A4 /* Stamps.swift in Sources */,
 				DBA2CAE41C126935008256A4 /* SignupViewController.swift in Sources */,
 				DBA2CAE81C1269B5008256A4 /* ProfileViewController.swift in Sources */,
 				DBA2CB021C13BFAB008256A4 /* User.swift in Sources */,

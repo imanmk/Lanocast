@@ -38,31 +38,29 @@ class User
     }
     
     
+    static var stampsReceivedJSONArray = [[String : AnyObject]]()
+    static var stampsToGiveJSONArray = [[String : AnyObject]]()
+    static var userTransactionsJSONArray = [[String : AnyObject]]()
     
     
     
-    
-    
-    
-    
-    
-    
+
     func Populate(dictionary:NSDictionary) {
         
-        id = dictionary["id"] as! Int
-        email = dictionary["email"] as! String
-        created_at = dictionary["created_at"] as! String
-        updated_at = dictionary["updated_at"] as! String
-        image = dictionary["image"] as! String
-        meta_title = dictionary["meta_title"] as! String
-        meta_description = dictionary["meta_description"] as! String
-        name = dictionary["name"] as! String
-        sex = dictionary["sex"] as! String
-        group = dictionary["group"] as! String
-        caption = dictionary["caption"] as! String
-        photo_id = dictionary["photo_id"] as! Int
-        gallery = dictionary["gallery"] as! Int
-        birthdate = dictionary["birthdate"] as! String
+//        id = dictionary["id"] as! Int
+//        email = dictionary["email"] as! String
+//        created_at = dictionary["created_at"] as! String
+//        updated_at = dictionary["updated_at"] as! String
+//        image = dictionary["image"] as! String
+//        meta_title = dictionary["meta_title"] as! String
+//        meta_description = dictionary["meta_description"] as! String
+//        name = dictionary["name"] as! String
+//        sex = dictionary["sex"] as! String
+//        group = dictionary["group"] as! String
+//        caption = dictionary["caption"] as! String
+//        photo_id = dictionary["photo_id"] as! Int
+//        gallery = dictionary["gallery"] as! Int
+//        birthdate = dictionary["birthdate"] as! String
     }
     
     class func DateFromString(dateString:String) -> NSDate
@@ -75,11 +73,11 @@ class User
     }
 
     
-    class func Populate(dictionary:NSDictionary) -> User
-    {
-        let result = User()
-        result.Populate(dictionary)
-        return result
-    }
+//    class func Populate(dictionary:NSDictionary) -> User
+//    {
+////        let result = User()
+////        result.Populate(dictionary)
+//        return result
+//    }
     
 }
