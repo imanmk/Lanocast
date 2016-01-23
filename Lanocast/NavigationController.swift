@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NavigationController: UINavigationBar {
+class NavigationController: UINavigationController, UIViewControllerTransitioningDelegate {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -17,5 +17,17 @@ class NavigationController: UINavigationBar {
         // Drawing code
     }
     */
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Status bar white font
+        let navigationBarColor = UIColor(red: 254/255, green: 90/255, blue: 29/255, alpha: 1)
+        //change navigation bar tint color
+        self.navigationBar.barTintColor = navigationBarColor
+        //change text color on navogation bar
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+    }
+
+    
 
 }

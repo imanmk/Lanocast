@@ -2,29 +2,32 @@
 
 import UIKit
 
-var str = "Hello, playground"
+// Declare protocol here
+protocol ColorSwitchable {
+    func switchColor(color: Color)
+}
+
+enum LightState {
+    case On, Off
+}
+
+enum Color {
+    case RGB(Double, Double, Double, Double)
+    case HSB(Double, Double, Double, Double)
+}
+
+class WifiLamp: ColorSwitchable {
+    let state: LightState
+    var color: Color
+    
+    func switchColor(color: Color) {
+        self.color = color
+    }
+    
+    init() {
+        self.state = .On
+        self.color = .RGB(0,0,0,0)
+    }
+}
 
 
-var arrayDic = [["image" : "xuan.jpg"], ["image" : "girl20.jpg"], ["image" : "girl5.jpeg"]]
-
-var text = arrayDic[0]["image"]!
-
-let imageString = "http://www.lanocast.com/uploads/\(text)"
-
-let imageURL = NSURL(string: imageString)
-
-let directoryURL = NSURL(string: "www.me.com/")
-
-let docURL = directoryURL!.URLByAppendingPathComponent("imanmk")
-
-
-let wordDict = [
-    "A" : 2,
-    "Z" : 3,
-    "D" : 1
-]
-
-let sortedDict = wordDict.values.sort { $0 < $1 }
-print("\(sortedDict)")
-
-print(wordDict["A"]!)

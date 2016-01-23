@@ -12,7 +12,7 @@ target 'Lanocast' do
     pod 'SwiftyJSON', '~> 2.3'
     pod 'Kingfisher', '~> 1.8'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
-    pod 'HanekeSwift'
+    #pod 'HanekeSwift'
 
 end
 

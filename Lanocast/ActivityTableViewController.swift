@@ -67,26 +67,26 @@ class ActivityTableViewController: UITableViewController {
         
         print("Received from key: \(DataManager.transactionsArray[indexPath.row][Constants.RECEIVED_FROM_KEY]!)")
         if let receivedFrom = DataManager.transactionsArray[indexPath.row][Constants.RECEIVED_FROM_KEY]  {
-            var id = receivedFrom as! Int
-            var name = DataManager.getNameFromID(id)
-            cell.receivedFromLabel.text = "received from \(name)"
+            let id = receivedFrom as! Int
+            let name = DataManager.getNameFromID(id)
+            cell.receivedFromLabel.text = "\(name) gave a "
         } else {
-            cell.receivedFromLabel.text = "received from"
+            cell.receivedFromLabel.text = "gave a "
         }
         
         print("Given to key: \(DataManager.transactionsArray[indexPath.row][Constants.GIVEN_TO_KEY]!)")
         if let givenTo = DataManager.transactionsArray[indexPath.row][Constants.GIVEN_TO_KEY] {
-            var id = givenTo as! Int
-            var name = DataManager.getNameFromID(id)
-            cell.givenToLabel.text = "given to \(name)"
+            let id = givenTo as! Int
+            let name = DataManager.getNameFromID(id)
+            cell.givenToLabel.text = "to \(name)"
             
         } else {
-            cell.givenToLabel.text = "given to"
+            cell.givenToLabel.text = "to"
         }
         
         if let stampID = DataManager.transactionsArray[indexPath.row][Constants.STAMP_KIND_KEY] {
-            var stampID = stampID as! Int
-            var stampName = Stamps.getStampNameByID(stampID)
+            let stampID = stampID as! Int
+            let stampName = Stamps.getStampNameByID(stampID)
             cell.stampKindLabel.text = "\(stampName) stamp"
             
             

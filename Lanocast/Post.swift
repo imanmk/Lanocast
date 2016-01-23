@@ -11,9 +11,3 @@ import Alamofire
 import SwiftyJSON
 import Kingfisher
 
-
-class Post {
-    
-  
-    
-}

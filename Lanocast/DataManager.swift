@@ -34,7 +34,7 @@ class DataManager {
         var name = "Lano name"
         
         for (var i = 0; i < galleryJSONArray.count; ++i) {
-            var idNumber = galleryJSONArray[i]["id"] as! Int
+            let idNumber = galleryJSONArray[i]["id"] as! Int
             if (ID == idNumber) {
                 name =  galleryJSONArray[i][Constants.NAME_KEY] as! String
                 break

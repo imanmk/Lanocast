@@ -10,8 +10,9 @@
 import UIKit
 import Spring
 
-class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
+class SignupViewController: UIViewController {
+    //UIPickerViewDelegate
+    //UIPickerViewDataSource
     
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
@@ -19,6 +20,18 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet var confirmPasswordTextField: UITextField!
     @IBOutlet var birthdateTextField: UITextField!
     @IBOutlet var sexPickerTextField: UITextField!
+    
+    
+    @IBAction func signupButton(sender: UIButton) {
+        
+        self.performSegueWithIdentifier("signupSegueToGallery", sender: self)
+        
+    }
+   
+    @IBAction func choosePhotoSignupButton(sender: UIButton) {
+        self.performSegueWithIdentifier("choosePhotoToGallerySegue", sender: self)
+    }
+    
     
     //display date wheels for user birthdate
     
@@ -33,26 +46,26 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             forControlEvents: UIControlEvents.ValueChanged)
     }
     
-    func birthdatePickerValueChanged(sender: UIDatePicker) {
-        
-        let textFieldBirthDateFormatter = NSDateFormatter()
-        let userBirthDateFormatter = NSDateFormatter()
-        var tempBirthDate = NSDate()
-        
-        userBirthDateFormatter.dateFormat = "yyyy-MM-dd"
-        
-        textFieldBirthDateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        
-        textFieldBirthDateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
-        
-        birthdateTextField.text = textFieldBirthDateFormatter.stringFromDate(sender.date)
-        
-        //#warning check nil here
-        
-        tempBirthDate = userBirthDateFormatter.dateFromString(birthdateTextField.text!)!
-        User.birthdate = userBirthDateFormatter.stringFromDate(tempBirthDate)
-        
-    }
+//    func birthdatePickerValueChanged(sender: UIDatePicker) {
+//        
+//        let textFieldBirthDateFormatter = NSDateFormatter()
+//        let userBirthDateFormatter = NSDateFormatter()
+//        var tempBirthDate = NSDate()
+//        
+//        userBirthDateFormatter.dateFormat = "yyyy-MM-dd"
+//        
+//        textFieldBirthDateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+//        
+//        textFieldBirthDateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+//        
+//        birthdateTextField.text = textFieldBirthDateFormatter.stringFromDate(sender.date)
+//        
+//        //#warning check nil here
+//        
+////        tempBirthDate = userBirthDateFormatter.dateFromString(birthdateTextField.text!)!
+////        User.birthdate = userBirthDateFormatter.stringFromDate(tempBirthDate)
+//        
+//    }
     
     
     
@@ -62,9 +75,9 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let sexPickerView = UIPickerView()
-        sexPickerView.delegate = self
-        sexPickerTextField.inputView = sexPickerView
+        //let sexPickerView = UIPickerView()
+        //sexPickerView.delegate = self
+        //sexPickerTextField.inputView = sexPickerView
         
     }
     
@@ -72,29 +85,33 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    //number of components in sex picker wheel
-    
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        
-        return 1
-    }
-    
-    //number of components in sex picker wheel
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
-        return Constants.sexOptions.count
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return Constants.sexOptions[row]
-    }
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        sexPickerTextField.text = Constants.sexOptions[row]
-    }
-    
-    
 }
+    
+    //number of components in sex picker wheel
+    
+//    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+//        
+//        return 1
+//    }
+//    
+//    //number of components in sex picker wheel
+//    
+//    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        
+//        return Constants.sexOptions.count
+//    }
+//    
+//    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return Constants.sexOptions[row]
+//    }
+//    
+//    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        sexPickerTextField.text = Constants.sexOptions[row]
+//    }
+    
+ 
+
+    
+    
+
 
